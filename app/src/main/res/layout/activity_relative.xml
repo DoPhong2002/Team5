@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Header Image -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="Profile Picture"
+        android:src="@drawable/image1"
+        android:layout_alignParentTop="true" />
+
+    <!-- Username and Status -->
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_below="@id/profile_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status for image"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_container"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Follow" />
+
+        <Button
+            android:id="@+id/btn_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Message" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.example.team5.ui.notifications;
+package com.example.team7.ui.notifications;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

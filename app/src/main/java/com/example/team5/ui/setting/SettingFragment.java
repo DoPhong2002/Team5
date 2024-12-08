@@ -1,19 +1,17 @@
-package com.example.team5.ui.setting;
+package com.example.team7.ui.setting;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
-import com.example.team5.databinding.FragmentSettingBinding;
-import com.example.team5.ui.setting.relativelayout.AfterOptimizationActivity;
-import com.example.team5.ui.setting.relativelayout.BeforeOptimizationActivity;
+import com.example.team7.databinding.FragmentSettingBinding;
+import com.example.team7.ui.setting.compare.RelativeActivity;
+import com.example.team7.ui.setting.compare.LinearActivity;
 
 public class SettingFragment extends Fragment {
 
@@ -21,21 +19,17 @@ public class SettingFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SettingViewModel settingViewModel =
-                new ViewModelProvider(this).get(SettingViewModel.class);
 
         binding = FragmentSettingBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         binding.buttonBefore.setOnClickListener(view -> {
-            startActivity(new Intent(requireActivity(), AfterOptimizationActivity.class));
+            startActivity(new Intent(requireActivity(), LinearActivity.class));
         });
         binding.buttonAfter.setOnClickListener(view -> {
-            startActivity(new Intent(requireActivity(), BeforeOptimizationActivity.class));
+            startActivity(new Intent(requireActivity(), RelativeActivity.class));
         });
 
-        final TextView textView = binding.textSetting;
-        settingViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

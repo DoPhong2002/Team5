@@ -1,4 +1,4 @@
-package com.example.team5.ui.setting;
+package com.example.team7.ui.setting;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
