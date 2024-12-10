@@ -3,61 +3,46 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Header Image -->
     <ImageView
         android:id="@+id/profile_image"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_alignParentTop="true"
         android:contentDescription="Profile Picture"
-        android:src="@drawable/image1"
-        android:layout_alignParentTop="true" />
+        android:src="@drawable/image1" />
 
-    <!-- Username and Status -->
-    <LinearLayout
-        android:id="@+id/text_container"
+    <TextView
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:layout_below="@id/profile_image"
-        android:orientation="vertical">
+        android:layout_marginStart="10dp"
+        android:text="Username"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/username"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Username"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Status for image"
-            android:textSize="14sp" />
-    </LinearLayout>
-
-    <!-- Buttons -->
-    <LinearLayout
+    <TextView
+        android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_container"
+        android:layout_below="@id/username"
+        android:layout_marginStart="10dp"
+        android:text="Status for image"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status"
         android:layout_marginTop="16dp"
-        android:orientation="vertical">
+        android:text="Follow" />
 
-        <Button
-            android:id="@+id/btn_follow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Follow" />
-
-        <Button
-            android:id="@+id/btn_message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Message" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/btn_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_follow"
+        android:text="Message" />
 
 </RelativeLayout>
