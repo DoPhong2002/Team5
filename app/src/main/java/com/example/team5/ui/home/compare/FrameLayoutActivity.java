@@ -1,4 +1,4 @@
-package com.example.team7.ui.home.compare;
+package com.example.team5.ui.home.compare;
 
 import android.os.Bundle;
 

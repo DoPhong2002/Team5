@@ -1,4 +1,4 @@
-package com.example.team7.ui.notifications.compare;
+package com.example.team5.ui.notifications.compare;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -10,7 +10,7 @@ import android.widget.FrameLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.team7.R;
+import com.example.team5.R;
 
 public class CanvasActivity extends AppCompatActivity {
     @Override

@@ -1,4 +1,4 @@
-package com.example.team7.ui.setting;
+package com.example.team5.ui.setting;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.team7.databinding.FragmentSettingBinding;
-import com.example.team7.ui.setting.compare.RelativeActivity;
-import com.example.team7.ui.setting.compare.LinearActivity;
+import com.example.team5.databinding.FragmentSettingBinding;
+import com.example.team5.ui.setting.compare.RelativeActivity;
+import com.example.team5.ui.setting.compare.LinearActivity;
 
 public class SettingFragment extends Fragment {
 

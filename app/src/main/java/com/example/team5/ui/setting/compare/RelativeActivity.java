@@ -1,10 +1,10 @@
-package com.example.team7.ui.setting.compare;
+package com.example.team5.ui.setting.compare;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.team7.R;
+import com.example.team5.R;
 
 public class RelativeActivity extends AppCompatActivity {
     @Override

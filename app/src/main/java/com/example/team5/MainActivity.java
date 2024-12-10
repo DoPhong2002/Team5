@@ -1,4 +1,4 @@
-package com.example.team7;
+package com.example.team5;
 
 import android.os.Bundle;
 
@@ -8,8 +8,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.team7.R;
-import com.example.team7.databinding.ActivityMainBinding;
+import com.example.team5.databinding.ActivityMainBinding;
 
 
 public class MainActivity extends AppCompatActivity {

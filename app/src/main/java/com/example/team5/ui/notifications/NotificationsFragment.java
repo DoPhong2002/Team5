@@ -1,4 +1,4 @@
-package com.example.team7.ui.notifications;
+package com.example.team5.ui.notifications;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.team7.databinding.FragmentNotificationsBinding;
-import com.example.team7.ui.notifications.compare.CanvasActivity;
-import com.example.team7.ui.notifications.compare.OpenGLActivity;
+import com.example.team5.databinding.FragmentNotificationsBinding;
+import com.example.team5.ui.notifications.compare.CanvasActivity;
+import com.example.team5.ui.notifications.compare.OpenGLActivity;
 
 public class NotificationsFragment extends Fragment {
 

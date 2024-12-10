@@ -1,4 +1,4 @@
-package com.example.team7.ui.notifications.compare;
+package com.example.team5.ui.notifications.compare;
 
 import android.content.Context;
 import android.opengl.GLES20;
@@ -8,7 +8,7 @@ import android.widget.FrameLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.team7.R;
+import com.example.team5.R;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -35,8 +35,6 @@ class OpenGLView extends GLSurfaceView {
 
     public OpenGLView(Context context) {
         super(context);
-
-        // Sử dụng OpenGL ES 2.0
         setEGLContextClientVersion(2);
         renderer = new OpenGLRenderer();
         setRenderer(renderer);
@@ -46,7 +44,7 @@ class OpenGLView extends GLSurfaceView {
 class OpenGLRenderer implements GLSurfaceView.Renderer {
     @Override
     public void onSurfaceCreated(GL10 gl, EGLConfig config) {
-        GLES20.glClearColor(1.0f, 1.0f, 1.0f, 1.0f); // Màu nền trắng
+        GLES20.glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     }
 
     @Override
@@ -57,11 +55,8 @@ class OpenGLRenderer implements GLSurfaceView.Renderer {
     @Override
     public void onDrawFrame(GL10 gl) {
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT);
-
         drawRectangle();
-
     }
-
 
     private void drawRectangle() {
         // Quy đổi tọa độ từ Canvas sang OpenGL

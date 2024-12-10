@@ -22,8 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.setting.relativelayout.AfterOptimizationActivity" />
-        <activity android:name=".ui.setting.relativelayout.BeforeOptimizationActivity" />
+        <activity android:name=".ui.setting.compare.RelativeActivity" />
+        <activity android:name=".ui.setting.compare.LinearActivity" />
+        <activity android:name=".ui.notifications.compare.CanvasActivity" />
+        <activity android:name=".ui.notifications.compare.OpenGLActivity" />
+        <activity android:name=".ui.home.compare.FrameLayoutActivity" />
+        <activity android:name=".ui.home.compare.MergeLayoutActivity" />
 
     </application>
 
