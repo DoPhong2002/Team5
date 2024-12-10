@@ -21,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
          AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_notifications, R.id.navigation_setting)
                 .build();
