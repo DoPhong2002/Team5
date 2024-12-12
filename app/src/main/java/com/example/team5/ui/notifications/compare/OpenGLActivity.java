@@ -27,6 +27,9 @@ public class OpenGLActivity extends AppCompatActivity {
         FrameLayout container = findViewById(R.id.drawing_container);
         OpenGLView openGLView = new OpenGLView(this);
         container.addView(openGLView);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
     }
 }
 

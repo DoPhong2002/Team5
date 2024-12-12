@@ -20,6 +20,9 @@ public class CanvasActivity extends AppCompatActivity {
         FrameLayout container = findViewById(R.id.drawing_container);
         CanvasView canvasView = new CanvasView(this);
         container.addView(canvasView);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
     }
 }
 
