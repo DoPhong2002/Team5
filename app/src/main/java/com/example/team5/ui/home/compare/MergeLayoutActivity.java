@@ -10,7 +10,7 @@ public class MergeLayoutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_parent_with_merge);
+        setContentView(R.layout.layout_merge);
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }

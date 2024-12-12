@@ -34,12 +34,11 @@ public class OpenGLActivity extends AppCompatActivity {
 }
 
 class OpenGLView extends GLSurfaceView {
-    private final OpenGLRenderer renderer;
 
     public OpenGLView(Context context) {
         super(context);
         setEGLContextClientVersion(2);
-        renderer = new OpenGLRenderer();
+        OpenGLRenderer renderer = new OpenGLRenderer();
         setRenderer(renderer);
     }
 }
@@ -62,7 +61,6 @@ class OpenGLRenderer implements GLSurfaceView.Renderer {
     }
 
     private void drawRectangle() {
-        // Quy đổi tọa độ từ Canvas sang OpenGL
         float left = -0.5f;
         float right = 0.5f;
         float top = 0.2f;
