@@ -60,6 +60,13 @@ class OpenGLRenderer implements GLSurfaceView.Renderer {
         drawRectangle();
     }
 
+    private int loadShader(int type, String shaderCode) {
+        int shader = GLES20.glCreateShader(type);
+        GLES20.glShaderSource(shader, shaderCode);
+        GLES20.glCompileShader(shader);
+        return shader;
+    }
+
     private void drawRectangle() {
         float left = -0.5f;
         float right = 0.5f;
@@ -114,12 +121,5 @@ class OpenGLRenderer implements GLSurfaceView.Renderer {
         GLES20.glDisableVertexAttribArray(positionHandle);
     }
 
-
-    private int loadShader(int type, String shaderCode) {
-        int shader = GLES20.glCreateShader(type);
-        GLES20.glShaderSource(shader, shaderCode);
-        GLES20.glCompileShader(shader);
-        return shader;
-    }
 
 }

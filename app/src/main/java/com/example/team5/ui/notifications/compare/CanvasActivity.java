@@ -28,12 +28,11 @@ public class CanvasActivity extends AppCompatActivity {
 }
 
 class CanvasView extends View {
-    private Paint paint;
+    private final Paint paint;
 
     public CanvasView(Context context) {
         super(context);
         paint = new Paint();
-        paint.setAntiAlias(true);
     }
 
     @Override
@@ -45,7 +44,7 @@ class CanvasView extends View {
         float right = getWidth() * 3 / 4f;
         float bottom = getHeight() / 2f + 200;
 
-        canvas.drawRect(left, top, right, bottom, paint); // Vẽ hình chữ nhật
+        canvas.drawRect(left, top, right, bottom, paint);
 
     }
 }
